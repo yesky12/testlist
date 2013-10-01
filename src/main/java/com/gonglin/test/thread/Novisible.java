@@ -1,21 +1,29 @@
 package com.gonglin.test.thread;
 
-public class Novisible {
-	private static Boolean ready;
-	private static int number;
+public class NoVisible {
+	private  static Boolean ready = false;
+	private  static int number;
 
 	private static class ReaderThread extends Thread {
+        public ReaderThread(String name) {
+            super(name);
+        }
 		public void run() {
 			while (!ready) {
-				Thread.yield();
+                System.out.println( this.getName() + " while " + ready + " " + number);
+                Thread.yield();
 			}
 			System.out.println(number);
 		}
 	}
 
 	public static void main(String[] args) {
-		new ReaderThread().start();
-		number = 42;
-		ready = true;
-	}
+		new ReaderThread("A").start();
+        new ReaderThread("B").start();
+        System.out.println("started thread");
+        number = 42;
+        System.out.println("set number successful");
+        ready = true;
+        System.out.println("set ready successful");
+    }
 }
