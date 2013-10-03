@@ -13,7 +13,7 @@ import java.nio.channels.FileChannel;
 
 /**
  *
- * @author tmcginn
+ * @author Leo
  */
 public class ByteChannelCopyTest {
 

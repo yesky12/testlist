@@ -1,7 +1,7 @@
 package com.leo.test.sort;
 
 /**
- * User: lin.gong
+ * User: Leo
  * Date: 12-10-13
  * Time: 下午5:24
  */

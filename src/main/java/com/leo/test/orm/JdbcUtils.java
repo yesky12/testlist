@@ -12,9 +12,9 @@ import javax.sql.DataSource;
 import org.apache.commons.dbcp.BasicDataSourceFactory;
 
 /**
- * 操作数据�?
+ * 操作数据
  * 
- * @author lin.gong
+ * @author Leo
  * 
  */
 public final class JdbcUtils {

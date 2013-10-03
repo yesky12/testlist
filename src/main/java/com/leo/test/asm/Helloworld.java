@@ -1,4 +1,4 @@
-//package com.gonglin.test.asm;
+//package com.leo.test.asm;
 //import org.springframework.asm.ClassWriter;
 //import org.springframework.asm.MethodVisitor;
 //import org.springframework.asm.Opcodes;
@@ -10,7 +10,7 @@
 //import java.io.PrintStream;
 //
 ///**
-// * User: lin.gong
+// * User: Leo
 // * Date: 12-8-26
 // * Time: 下午7:58
 // */

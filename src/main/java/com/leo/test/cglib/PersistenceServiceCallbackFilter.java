@@ -6,7 +6,7 @@ import net.sf.cglib.proxy.CallbackFilter;
 
 /**
  * 
- * @author lin.gong
+ * @author Leo
  * 
  */
 public class PersistenceServiceCallbackFilter implements CallbackFilter {

@@ -3,7 +3,7 @@ package com.leo.test.Enum;
 import java.lang.reflect.Modifier;
 
 /**
- * User: lin.gong
+ * User: Leo
  * Date: 12-10-21
  * Time: 下午8:18
  */

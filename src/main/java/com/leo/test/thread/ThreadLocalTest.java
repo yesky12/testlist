@@ -2,7 +2,7 @@ package com.leo.test.thread;
 
 /**
  * @说明 变量安全测试
- * @author lin.gong
+ * @author Leo
  */
 public class ThreadLocalTest {
 	public static ThreadLocal<Integer> threadLocal = new ThreadLocal<Integer>();

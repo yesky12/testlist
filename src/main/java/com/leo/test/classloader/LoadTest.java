@@ -1,7 +1,7 @@
 package com.leo.test.classloader;
 
 /**
- * User: lin.gong
+ * User: Leo
  * Date: 12-10-8
  * Time: 下午10:43
  */

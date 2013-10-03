@@ -1,7 +1,7 @@
 package com.leo.test.String;
 
 /**
- * User: lin.gong
+ * User: Leo
  * Date: 12-10-9
  * Time: 上午12:06
  */

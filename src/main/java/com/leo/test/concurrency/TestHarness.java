@@ -3,7 +3,7 @@ package com.leo.test.concurrency;
 import java.util.concurrent.CountDownLatch;
 
 /**
- * User: lingong
+ * User: Leo
  * Date: 13-10-1
  * Time: 上午11:11
  */

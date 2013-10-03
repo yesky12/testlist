@@ -1,7 +1,7 @@
 package com.leo.test.thread;
 
 /**
- * User: lin.gong
+ * User: Leo
  * Date: 12-10-8
  * Time: 下午11:59
  */

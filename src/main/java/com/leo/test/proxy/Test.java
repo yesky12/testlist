@@ -4,7 +4,7 @@ package com.leo.test.proxy;
 /**
  * 动态代理
  * 
- * @author GONGLIN
+ * @author Leo
  * 
  */
 public class Test {

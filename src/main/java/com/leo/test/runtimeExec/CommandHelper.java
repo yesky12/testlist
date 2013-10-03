@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * User: lin.gong Date: 3/26/13 Time: 5:21 PM
+ * User: Leo Date: 3/26/13 Time: 5:21 PM
  */
 public class CommandHelper {
     /** millSeconds */

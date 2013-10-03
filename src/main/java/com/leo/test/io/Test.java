@@ -3,7 +3,7 @@ package com.leo.test.io;
 import java.nio.file.Paths;
 
 /**
- * User: leo
+ * User: Leo
  * Date: 8/7/13
  * Time: 9:46 AM
  */

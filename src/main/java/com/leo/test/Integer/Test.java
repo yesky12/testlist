@@ -1,7 +1,7 @@
 package com.leo.test.Integer;
 
 /**
- * User: leo Date: 3/8/13 Time: 11:50 AM
+ * User: Leo Date: 3/8/13 Time: 11:50 AM
  */
 public class Test {
     public static void main(String[] args) {

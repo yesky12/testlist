@@ -9,7 +9,7 @@ import java.io.IOException;
 /**
  * 类StreamFileCopy.java的实现描述：通过FileInputStream来读写
  * 
- * @author yblin 2010-10-17 下午01:59:05
+ * @author Leo 2010-10-17 下午01:59:05
  */
 public class StreamFileCopyWithBuffer extends CommonCopy {
 

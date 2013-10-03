@@ -10,7 +10,7 @@ public class Client {
 	
 	public void selectiveAuthManager(){
 		System.out.println("the loginer's name is not leo,so have no permites do manager except to query operator...");
-		InfoManager authManger=InfoManagerFactory.getSelectiveAuthInstance(new AuthProxy("gonglin1"));
+		InfoManager authManger=InfoManagerFactory.getSelectiveAuthInstance(new AuthProxy("leo1"));
 		doCRUD(authManger);
 		separatorLine();
 	}
@@ -18,7 +18,7 @@ public class Client {
 	
 	public void haveNoAuthManager(){
 		System.out.println("the loginer's name is not leo,so have no permits do manager...");
-		InfoManager noAuthManager=InfoManagerFactory.getinstance(new AuthProxy("gonglin1"));
+		InfoManager noAuthManager=InfoManagerFactory.getinstance(new AuthProxy("leo1"));
 		doCRUD(noAuthManager);
 		separatorLine();
 	}

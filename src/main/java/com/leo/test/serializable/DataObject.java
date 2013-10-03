@@ -3,7 +3,7 @@ package com.leo.test.serializable;
 import java.io.*;
 
 /**
- * User: lin.gong Date: 12-10-9 Time: 上午12:14
+ * User: Leo Date: 12-10-9 Time: 上午12:14
  */
 public class DataObject implements Serializable {
     public int getI() {

@@ -1,7 +1,7 @@
 package com.leo.test.jrebel;
 
 /**
- * User: leo Date: 1/20/13 Time: 12:02 PM
+ * User: Leo Date: 1/20/13 Time: 12:02 PM
  */
 public class jrebel {
     public static void main(String[] args) {

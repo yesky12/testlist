@@ -10,7 +10,7 @@ import java.nio.channels.FileChannel;
 /**
  * 类NIOFileCopy.java的实现描述：使用NIO进行文件读写
  * 
- * @author yblin 2010-10-17 下午02:09:31
+ * @author Leo 2010-10-17 下午02:09:31
  */
 public class NIOFileCopy extends CommonCopy {
 

@@ -6,7 +6,7 @@ import org.objectweb.asm.Opcodes;
 
 /**
  * 实现一个 methodAdapter 类，用于 修改方法
- * @author lin.gong
+ * @author Leo
  *
  */
 public class AddSecurityCheckMethodAdapter extends MethodAdapter {

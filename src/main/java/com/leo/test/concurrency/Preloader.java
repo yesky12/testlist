@@ -5,7 +5,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 
 /**
- * User: lingong
+ * User: Leo
  * Date: 13-10-1
  * Time: 下午2:55
  */

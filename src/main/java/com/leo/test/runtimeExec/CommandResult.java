@@ -1,7 +1,7 @@
 package com.leo.test.runtimeExec;
 
 /**
- * User: leo Date: 3/26/13 Time: 5:22 PM
+ * User: Leo Date: 3/26/13 Time: 5:22 PM
  */
 public class CommandResult {
     public static final int EXIT_VALUE_TIMEOUT = -1;

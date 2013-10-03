@@ -7,10 +7,8 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 import org.apache.commons.lang.builder.ToStringStyle;
 
 /**
- * 酒店信息共用实体
- * 
- * @Class Name HotelInfo
- * @Author fengtao.yang
+ *
+ * @Author Leo
  */
 public class HotelInfo {
     private int id;

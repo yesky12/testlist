@@ -10,7 +10,7 @@ import java.nio.channels.FileChannel;
 /**
  * 类FileGathering.java的实现描述：write two byte arrays to a same file.
  * 
- * @author yblin 2010-10-18 上午09:22:10
+ * @author Leo 2010-10-18 上午09:22:10
  */
 public class FileGathering {
 

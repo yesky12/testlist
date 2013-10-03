@@ -1,7 +1,7 @@
 package com.leo.test.classloader;
 
 /**
- * User: leo
+ * User: Leo
  * Date: 8/6/13
  * Time: 11:23 AM
  */

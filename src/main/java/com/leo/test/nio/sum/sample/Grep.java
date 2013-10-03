@@ -35,14 +35,14 @@ import java.util.regex.PatternSyntaxException;
 public class Grep {
 
     // Charset and decoder for ISO-8859-15
-    private static Charset        charset     = Charset.forName("ISO-8859-15");
-    private static CharsetDecoder decoder     = charset.newDecoder();
+    private static Charset charset = Charset.forName("ISO-8859-15");
+    private static CharsetDecoder decoder = charset.newDecoder();
 
     // Pattern used to parse lines
-    private static Pattern        linePattern = Pattern.compile(".*\r?\n");
+    private static Pattern linePattern = Pattern.compile(".*\r?\n");
 
     // The input pattern that we're looking for
-    private static Pattern        pattern;
+    private static Pattern pattern;
 
     // Compile the pattern from the command line
     //

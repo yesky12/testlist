@@ -20,7 +20,7 @@ import org.apache.commons.lang.StringUtils;
 /**
  * JDBC相关方法
  * 
- * @author lin.gong
+ * @author Leo
  * 
  */
 public class QunarJDBCOprate {

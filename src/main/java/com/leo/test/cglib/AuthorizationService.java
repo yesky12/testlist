@@ -4,7 +4,7 @@ import java.lang.reflect.Method;
 
 /**
  * 
- * @author lin.gong
+ * @author Leo
  *
  */
 public interface AuthorizationService {

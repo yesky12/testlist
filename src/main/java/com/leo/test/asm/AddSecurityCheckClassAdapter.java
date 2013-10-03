@@ -6,7 +6,7 @@ import org.objectweb.asm.MethodVisitor;
 
 /**
  * 实现一个ClassAdapter 用于判断何时修改 AccountAsm 类方法
- * @author lin.gong
+ * @author Leo
  *
  */
 public class AddSecurityCheckClassAdapter extends ClassAdapter{

@@ -2,7 +2,7 @@ package com.leo.test.cglib;
 
 /**
  * 
- * @author lin.gong
+ * @author Leo
  *
  */
 public interface PersistenceService {

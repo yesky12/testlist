@@ -7,7 +7,7 @@ import net.sf.cglib.proxy.MethodProxy;
 
 /**
  * 
- * @author lin.gong
+ * @author Leo
  *
  */
 public class AuthProxy implements MethodInterceptor {

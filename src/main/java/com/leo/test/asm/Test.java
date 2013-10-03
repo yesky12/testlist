@@ -12,7 +12,7 @@ import org.objectweb.asm.ClassWriter;
  * 读取原来的AccountAsm.class文件，并为operation方法前添加SecurityChecker.checkSecurity()，然后
  * 生产新的class文件
  * 
- * @author lin.gong
+ * @author Leo
  * 
  */
 public class Test {
