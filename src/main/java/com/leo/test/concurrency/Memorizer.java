@@ -20,8 +20,7 @@ class ExpensiveFunction implements Computable<String, BigInteger> {
 }
 
 public class Memorizer<A, V> implements Computable<A, V> {
-    private final ConcurrentMap<A, Future<V>> cache
-            = new ConcurrentHashMap<A, Future<V>>();
+    private final ConcurrentMap<A, Future<V>> cache = new ConcurrentHashMap<A, Future<V>>();
     private final Computable<A, V> c;
 
     public Memorizer(Computable<A, V> c) {
