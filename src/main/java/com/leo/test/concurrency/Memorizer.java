@@ -12,13 +12,6 @@ interface Computable<A, V> {
     V compute(A arg) throws InterruptedException;
 }
 
-class ExpensiveFunction implements Computable<String, BigInteger> {
-    public BigInteger compute(String arg) {
-        // after deep thought...
-        return new BigInteger(arg);
-    }
-}
-
 public class Memorizer<A, V> implements Computable<A, V> {
     private final ConcurrentMap<A, Future<V>> cache = new ConcurrentHashMap<A, Future<V>>();
     private final Computable<A, V> c;
