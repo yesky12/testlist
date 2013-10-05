@@ -34,20 +34,24 @@ class BrokenPrimeProducer extends Thread {
     }
 }
 
-class Test {
+class Test implements Runnable {
     private volatile boolean needMorePrimes = true;
 
     void setNeedMorePrimes(boolean needMorePrimes) {
         this.needMorePrimes = needMorePrimes;
     }
 
-    void consumePrimes() throws InterruptedException {
-        BlockingQueue<BigInteger> primes = new ArrayBlockingQueue<>(10);
+    public void run() {
+        BlockingQueue<BigInteger> primes = new ArrayBlockingQueue<>(1);
         BrokenPrimeProducer producer = new BrokenPrimeProducer(primes);
         producer.start();
         try {
             while (needMorePrimes)
-                System.out.println(primes.take());
+                try {
+                    System.out.println(primes.take());
+                } catch (InterruptedException e) {
+                    System.out.println("Interrupted");
+                }
         } finally {
             producer.cancel();
         }
@@ -55,7 +59,7 @@ class Test {
 
     public static void main(String[] args) throws InterruptedException {
         Test test = new Test();
-        test.consumePrimes();
+        new Thread(test).start();
         test.setNeedMorePrimes(false);
     }
 }
