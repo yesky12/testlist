@@ -21,6 +21,7 @@ public class FileScanner {
             return;
         }
         File[] allFiles = f.listFiles();
+        //如果每次检测到文件就中断，性能下降严重
         if (Thread.interrupted()) {
             throw new InterruptedException("文件扫描任务被中断");
         }
