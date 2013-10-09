@@ -7,7 +7,10 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 /*
- * User: Leo Date: 3/27/13 Time: 7:08 PM 定时器 schedule():下一次任务的执行时间，等于上一次任务的结束时间+时间间隔
+ * User: Leo
+ * Date: 3/27/13
+ * Time: 7:08 PM
+ * 定时器 schedule():下一次任务的执行时间，等于上一次任务的结束时间+时间间隔
  * scheduleAtFixedRate():下一次任务的执行时间，等于上一次任务的开始时间+时间间隔 当执行任务的时间大于时间间隔时： schedule任务会延后。
  * scheduleAtFixedRate任务不会延后，仍然在时间间隔内执行，存在并发性，要考虑线程同步的问题
  */

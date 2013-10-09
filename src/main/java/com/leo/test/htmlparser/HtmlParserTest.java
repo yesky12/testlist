@@ -30,6 +30,9 @@ import org.htmlparser.visitors.HtmlPage;
 import org.htmlparser.visitors.NodeVisitor;
 import org.htmlparser.visitors.ObjectFindingVisitor;
 
+/**
+ *
+ */
 public class HtmlParserTest extends TestCase {
 	private static final Logger logger = Logger.getLogger(HtmlParserTest.class);
 
