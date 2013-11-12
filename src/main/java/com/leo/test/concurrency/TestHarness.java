@@ -29,7 +29,6 @@ public class TestHarness {
             t.start();
         }
         long start = System.currentTimeMillis();
-        System.out.println("ddd");
         startGate.countDown();
         endGate.await();
         long end = System.currentTimeMillis();
