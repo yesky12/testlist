@@ -17,7 +17,7 @@ public class ScreenSnapshot {
 		try {
 
 			int width = (int)Toolkit.getDefaultToolkit().getScreenSize().getWidth();  
-	        int height = (int)Toolkit.getDefaultToolkit().getScreenSize().getHeight();  
+	        int height = (int)Toolkit.getDefaultToolkit().getScreenSize().getHeight();
 	        Robot robot = new Robot();
 	        BufferedImage image = robot.createScreenCapture(new Rectangle(width,height));  
 	        ImageIO.write (image, "png" , new File("d:/1.png"));   
