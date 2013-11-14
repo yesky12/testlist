@@ -11,14 +11,14 @@ import java.lang.annotation.*;
 /*
  * 元注解@Target,@Retention,@Documented,@Inherited
  *
- *     @Target 表示该注解用于什么地方，可能的 ElemenetType 参数包括：
- *         ElemenetType.CONSTRUCTOR 构造器声明
- *         ElemenetType.FIELD 域声明（包括 Enum 实例）
- *         ElemenetType.LOCAL_VARIABLE 局部变量声明
- *         ElemenetType.METHOD 方法声明
- *         ElemenetType.PACKAGE 包声明
- *         ElemenetType.PARAMETER 参数声明
- *         ElemenetType.TYPE 类，接口（包括注解类型）或enum声明
+ *     @Target 表示该注解用于什么地方，可能的 ElementType 参数包括：
+ *         ElementType.CONSTRUCTOR 构造器声明
+ *         ElementType.FIELD 域声明（包括 Enum 实例）
+ *         ElementType.LOCAL_VARIABLE 局部变量声明
+ *         ElementType.METHOD 方法声明
+ *         ElementType.PACKAGE 包声明
+ *         ElementType.PARAMETER 参数声明
+ *         ElementType.TYPE 类，接口（包括注解类型）或enum声明
  *
  *     @Retention 表示在什么级别保存该注解信息。可选的 RetentionPolicy 参数包括：
  *         RetentionPolicy.SOURCE 注解将被编译器丢弃
@@ -30,11 +30,12 @@ import java.lang.annotation.*;
  *     @Inherited 允许子类继承父类中的注解
  *
  */
-@Target({ElementType.METHOD,ElementType.FIELD})
+@Target({ElementType.METHOD, ElementType.FIELD, ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 @Inherited
 public @interface MyAnnotation {
     public int id();
+
     public String description() default "no description";
 }
