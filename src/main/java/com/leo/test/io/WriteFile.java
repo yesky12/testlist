@@ -16,7 +16,7 @@ public class WriteFile {
 		
 		BufferedWriter bw=new BufferedWriter(new  FileWriter("src\\main\\resources\\keywords.txt",true));
 		
-		bw.write("龚霖");
+		bw.write("Leo");
 
 		bw.newLine();
 		bw.flush();

@@ -22,7 +22,7 @@ public class User implements UserInterface{
 
 	@Override
 	public String getNames() {
-		return "龚霖";
+		return "Leo";
 	}
 
 }
