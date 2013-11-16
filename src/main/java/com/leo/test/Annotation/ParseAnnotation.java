@@ -84,7 +84,5 @@ public class ParseAnnotation {
                 System.out.println("public " + method.getReturnType() + " " + method.getName());
             }
         }
-
-
     }
 }
