@@ -10,21 +10,21 @@ import javax.imageio.ImageIO;
 
 public class ScreenSnapshot {
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		try {
+    /**
+     * @param args
+     */
+    public static void main(String[] args) {
+        try {
 
-			int width = (int)Toolkit.getDefaultToolkit().getScreenSize().getWidth();  
-	        int height = (int)Toolkit.getDefaultToolkit().getScreenSize().getHeight();
-	        Robot robot = new Robot();
-	        BufferedImage image = robot.createScreenCapture(new Rectangle(width,height));  
-	        ImageIO.write (image, "png" , new File("d:/1.png"));   
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+            int width = (int) Toolkit.getDefaultToolkit().getScreenSize().getWidth();
+            int height = (int) Toolkit.getDefaultToolkit().getScreenSize().getHeight();
+            Robot robot = new Robot();
+            BufferedImage image = robot.createScreenCapture(new Rectangle(width, height));
+            ImageIO.write(image, "png", new File("d:/1.png"));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
-	}
+    }
 
 }
