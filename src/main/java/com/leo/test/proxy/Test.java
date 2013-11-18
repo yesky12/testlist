@@ -11,7 +11,7 @@ public class Test {
 
 	public static void main(String[] args) {
 		ProxyUser proxyuser=new ProxyUser();
-		UserInterface user= (UserInterface) proxyuser.bind(new User());
+		UserInterface user= (UserInterface) proxyuser.bind(new UserImpl());
 		System.out.println(user.getNames());
 	}
 

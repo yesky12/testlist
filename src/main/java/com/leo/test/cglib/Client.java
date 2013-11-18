@@ -18,14 +18,14 @@ public class Client {
 	
 	public void haveNoAuthManager(){
 		System.out.println("the loginer's name is not leo,so have no permits do manager...");
-		InfoManager noAuthManager=InfoManagerFactory.getinstance(new AuthProxy("leo1"));
+		InfoManager noAuthManager=InfoManagerFactory.getInstance(new AuthProxy("leo1"));
 		doCRUD(noAuthManager);
 		separatorLine();
 	}
 	
 	public void haveAuthManager(){
 		System.out.println("the loginer's name is leo,so have permits do manager...");
-		InfoManager noAuthManager=InfoManagerFactory.getinstance(new AuthProxy("leo"));
+		InfoManager noAuthManager=InfoManagerFactory.getInstance(new AuthProxy("leo"));
 		doCRUD(noAuthManager);
 		separatorLine();
 	}
