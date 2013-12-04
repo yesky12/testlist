@@ -14,8 +14,7 @@ public final class Sort {
      *
      * @param a an array of Comparable items.
      */
-    public static <AnyType extends Comparable<? super AnyType>>
-    void insertionSort(AnyType[] a) {
+    public static <AnyType extends Comparable<? super AnyType>> void insertionSort(AnyType[] a) {
         int j;
 
         for (int p = 1; p < a.length; p++) {
@@ -26,13 +25,48 @@ public final class Sort {
         }
     }
 
+    public void bubbleSort(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array.length - 1 - i; j++) {
+                if (array[j] > array[j + 1]) {
+                    int temp = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
+                }
+            }
+        }
+    }
+
+    private void quickSort(int[] numbers, int low, int high) {
+        int i = low, j = high;
+        int pivot = numbers[low + (high - low) / 2];
+        while (i <= j) {
+            while (numbers[i] < pivot) {
+                i++;
+            }
+            while (numbers[j] > pivot) {
+                j--;
+            }
+            if (i <= j) {
+//                swapReferences(numbers, i, j);
+                i++;
+                j--;
+            }
+        }
+        if (low < j) {
+            quickSort(numbers, low, j);
+        }
+        if (i < high) {
+            quickSort(numbers, i, high);
+        }
+    }
+
     /**
      * Shellsort, using Shell's (poor) increments.
      *
      * @param a an array of Comparable items.
      */
-    public static <AnyType extends Comparable<? super AnyType>>
-    void shellsort(AnyType[] a) {
+    public static <AnyType extends Comparable<? super AnyType>> void shellSort(AnyType[] a) {
         int j;
 
         for (int gap = a.length / 2; gap > 0; gap /= 2)
@@ -345,7 +379,7 @@ public final class Sort {
             checkSort(a);
 
             Random.permute(a);
-            Sort.shellsort(a);
+            Sort.shellSort(a);
             checkSort(a);
 
             Random.permute(a);

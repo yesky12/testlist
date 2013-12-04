@@ -23,7 +23,7 @@ public class AuthProxy implements MethodInterceptor {
 			System.out.println("AuthProxy:you have no permits to do manger! method:" + method.getName());
 			return null;
 		}
-		return proxy.invokeSuper(obj, args);
+        return proxy.invokeSuper(obj, args);
 	}
 
 	public String getName() {

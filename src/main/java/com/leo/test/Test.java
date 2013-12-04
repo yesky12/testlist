@@ -1,51 +1,70 @@
 package com.leo.test;
 
 import java.io.UnsupportedEncodingException;
+import java.util.Random;
 
 /**
  * User: Leo Date: 4/22/13 Time: 9:13 PM
  */
 public class Test {
-    public static int a = 1;
+    private int[] numbers;
+    private int number;
+
+    public void sort(int[] values) {
+        // check for empty or null array
+        if (values == null || values.length == 0) {
+            return;
+        }
+        this.numbers = values;
+        number = values.length;
+        quickSort(0, number - 1);
+        System.out.println();
+    }
+
+    private void quickSort(int low, int high) {
+        int i = low, j = high;
+        int pivot = numbers[low + (high - low) / 2];
+        while (i <= j) {
+            while (numbers[i] < pivot) {
+                i++;
+            }
+            while (numbers[j] > pivot) {
+                j--;
+            }
+            if (i <= j) {
+                exchange(i, j);
+                i++;
+                j--;
+            }
+
+        }
+        if (low < j) {
+            quickSort(low, j);
+
+        }
+        if (i < high) {
+            quickSort(i, high);
+        }
+    }
+
+    private void exchange(int i, int j) {
+        int temp = numbers[i];
+        numbers[i] = numbers[j];
+        numbers[j] = temp;
+    }
 
     public static void main(String[] args) {
-        for (int i = 0; i < 1; i++) {
-            new Thread(new A()).start();
+        int[] number = new int[10];
+        Random generator = new Random();
+        for (int i = 0; i < number.length; i++) {
+            number[i] = generator.nextInt(100);
+            System.out.print(number[i] + " ");
         }
-        new Thread(new B()).start();
-        int a = 1;
-        aa(a);
-
-    }
-
-    public synchronized static void setA(int a) {
-        Test.a = a;
-    }
-
-    public static void aa(Object o) {
-
-    }
-}
-
-class A implements Runnable {
-
-    @Override
-    public void run() {
-        System.out.println(Test.a);
-    }
-}
-
-class B implements Runnable {
-
-    @Override
-    public void run() {
-        Test.setA(5);
-        System.out.println("set A start");
-//        try {
-//            Thread.sleep(3 * 1000);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
-        System.out.println("set A end");
+        System.out.println();
+        Test test = new Test();
+        test.sort(number);
+        for (int a : number) {
+            System.out.print(a + " ");
+        }
     }
 }
