@@ -1,6 +1,5 @@
 package com.leo.test.concurrency;
 
-import java.nio.channels.FileLockInterruptionException;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
@@ -19,6 +18,7 @@ public class ConditionBoundedBuffer<T> {
     private final T[] items = (T[]) new Object[10];
 
     private int tail, head, count;
+
     //阻塞并直到notFull
     public void put(T x) throws InterruptedException {
         lock.lock();
@@ -41,7 +41,7 @@ public class ConditionBoundedBuffer<T> {
     public T take() throws InterruptedException {
         lock.lock();
         try {
-            while ( count == 0) {
+            while (count == 0) {
                 notEmpty.await();
             }
             T x = items[head];
