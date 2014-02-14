@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <services>
+        <service name="PipelineService">
+            <property name="pipeline.default.descriptor" value="/WEB-INF/pipeline.xml"/>
+        </service>
+        <service name="VelocityService">
+            <property name="input.encoding" value="UTF-8"/>
+            <property name="velocimacro.library" value="macros.vm"/>
+        </service>
+        <service name="PullService">
+            <property name="tool.request"> <!-- 或tool.global -->
+                <property name="date" value="java.util.Date"/>
+            </property>
+        </service>
+        <service name="FormService">
+            <property name="form.descriptors">
+                <value>/WEB-INF/form.xml</value>
+            </property>
+        </service>
+        <service name="ModuleLoaderService">
+            <property name="module.packages">
+                <value>com.leo.test.webx.model</value>
+            </property>
+        </service>
+        <service name="URIBrokerService">
+            <property name="uri.descriptors">
+                <value>/WEB-INF/uri.xml</value>
+            </property>
+        </service>
+        <service name="PullService">
+            <property name="tool.global">
+                <property name="userAuth" value="com.leo.test.webx.util.UserAuth"/>
+            </property>
+        </service>
+    </services>
+</configuration>

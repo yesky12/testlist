@@ -1,8 +1,5 @@
 package com.leo.test.concurrency;
 
-
-import com.sun.corba.se.impl.orbutil.concurrent.Sync;
-
 import java.util.concurrent.locks.AbstractQueuedSynchronizer;
 
 /**

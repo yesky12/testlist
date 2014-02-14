@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uri-config>
+        <!-- ================================================================ -->
+        <!-- 外部链接。                                                       -->
+        <!-- ================================================================ -->
+    <uri name="alibabaSite" expose="true">
+        <serverURI>http://china.alibaba.com/</serverURI>
+    </uri>
+        <!-- ================================================================ -->
+        <!-- 内部链接。                                                       -->
+        <!-- ================================================================ -->
+    <turbine-uri name="workshopModule" expose="true"/>
+    <turbine-content-uri name="workshopContent" expose="true" extends="workshopModule"/>
+    <turbine-uri name="viewNewUser" expose="true" extends="workshopModule">
+        <target>viewUser.vm</target>
+        <query id="newUser">true</query>
+    </turbine-uri>
+    <turbine-uri name="hello" expose="true" extends="workshopModule">
+        <target>hello.vm</target>
+    </turbine-uri>
+</uri-config>

@@ -81,27 +81,27 @@
         </dependency>
 
         <dependency>
-            <groupId>qunar.common</groupId>
-            <artifactId>common-http</artifactId>
-            <version>7.0.9</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>1.1.13</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.qunar.ucenter</groupId>
-            <artifactId>ucenter-client</artifactId>
-            <version>1.2.5</version>
+            <groupId>com.alibaba.shared</groupId>
+            <artifactId>toolkit.webx.turbine</artifactId>
+            <version>2.0</version>
             <exclusions>
                 <exclusion>
-                    <groupId>commons-logging</groupId>
-                    <artifactId>commons-logging</artifactId>
+                    <artifactId>resources</artifactId>
+                    <groupId>resources</groupId>
                 </exclusion>
             </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>com.taobao.tair</groupId>
+            <artifactId>tair-mc-client</artifactId>
+            <version>1.0.4.14</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba.intl.sourcing.shared</groupId>
+            <artifactId>biz.rfq.common</artifactId>
+            <version>1.0.13</version>
         </dependency>
 
     </dependencies>
