@@ -104,6 +104,12 @@
             <version>1.0.13</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.alibaba.platform.shared</groupId>
+            <artifactId>napoli.client</artifactId>
+            <version>1.5.3</version>
+        </dependency>
+
     </dependencies>
 
     <build>
