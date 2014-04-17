@@ -93,6 +93,13 @@
         </dependency>
 
         <dependency>
+            <groupId>com.caucho.hessian</groupId>
+            <artifactId>hessian</artifactId>
+            <version>4.0.7</version>
+            <type>rar</type>
+        </dependency>
+
+        <dependency>
             <groupId>com.taobao.tair</groupId>
             <artifactId>tair-mc-client</artifactId>
             <version>1.0.4.14</version>
