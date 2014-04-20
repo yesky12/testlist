@@ -19,7 +19,7 @@ public class HelloHessianImpl extends HessianServlet implements HelloHessian {
         return car;
     }
 
-    public Map<String,String> myBabays() {
+    public Map<String, String> myBabays() {
         Map<String, String> map = new HashMap<String, String>();
         map.put("son", "孙吴空");
         map.put("daughter", "孙小美");
@@ -34,8 +34,8 @@ public class HelloHessianImpl extends HessianServlet implements HelloHessian {
         return list;
     }
 
-    public String sayHello() {
-        return "welcom to Hessian";
+    public String sayHello(String name) {
+        return "welcom to Hessian" + name;
     }
 
 }

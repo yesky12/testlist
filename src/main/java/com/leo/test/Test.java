@@ -6,7 +6,8 @@ package com.leo.test;
 public class Test {
 
     public static void main(String[] args) {
-        int i = 0;
-        System.out.println(i + 1 + "");
+        args = new String[5];
+        Class<? extends String[]> aClass = args.getClass();
+        System.out.println(aClass.getComponentType());
     }
 }

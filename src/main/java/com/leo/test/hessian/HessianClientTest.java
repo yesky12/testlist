@@ -15,7 +15,7 @@ public class HessianClientTest {
         HessianProxyFactory factory = new HessianProxyFactory();
         try {
             HelloHessian hello = (HelloHessian) factory.create(HelloHessian.class, url);
-            System.out.println(hello.sayHello());
+            System.out.println(hello.sayHello("xxx"));
 
             MyCar car = hello.getMyCar();
             System.out.println(car.toString());

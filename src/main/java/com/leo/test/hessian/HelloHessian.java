@@ -9,7 +9,7 @@ import java.util.Map;
 
 public interface HelloHessian {
 
-    String sayHello();
+    String sayHello(String name);
 
     MyCar getMyCar();
 
