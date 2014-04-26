@@ -13,19 +13,19 @@
         </init-param>
     </servlet>
 
-    <servlet>
-        <servlet-name>HelloHessian</servlet-name>
-        <servlet-class>com.caucho.hessian.server.HessianServlet</servlet-class>
-        <init-param>
-            <param-name>home-class</param-name>
-            <param-value>com.leo.test.hessian.HelloHessianImpl</param-value>
-        </init-param>
-        <init-param>
-            <param-name>home-api</param-name>
-            <param-value>com.leo.test.hessian.HelloHessian</param-value>
-        </init-param>
-        <load-on-startup>1</load-on-startup>
-    </servlet>
+    <!--<servlet>-->
+        <!--<servlet-name>HelloHessian</servlet-name>-->
+        <!--<servlet-class>com.caucho.hessian.server.HessianServlet</servlet-class>-->
+        <!--<init-param>-->
+            <!--<param-name>home-class</param-name>-->
+            <!--<param-value>com.leo.test.hessian.HelloHessianImpl</param-value>-->
+        <!--</init-param>-->
+        <!--<init-param>-->
+            <!--<param-name>home-api</param-name>-->
+            <!--<param-value>com.leo.test.hessian.HelloHessian</param-value>-->
+        <!--</init-param>-->
+        <!--<load-on-startup>1</load-on-startup>-->
+    <!--</servlet>-->
 
     <servlet-mapping>
         <servlet-name>WebxController</servlet-name>
@@ -37,9 +37,9 @@
         <url-pattern>*.do</url-pattern>
     </servlet-mapping>
 
-    <servlet-mapping>
-        <servlet-name>HelloHessian</servlet-name>
-        <url-pattern>/HessianService</url-pattern>
-    </servlet-mapping>
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>HelloHessian</servlet-name>-->
+        <!--<url-pattern>/HessianService</url-pattern>-->
+    <!--</servlet-mapping>-->
 
 </web-app>
