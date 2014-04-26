@@ -29,5 +29,6 @@ public class SimpleGreeting extends AbstractModule {
         out.println(" <p>你好，世界！</p>");
         out.println("</body>");
         out.println("</html>");
+        out.println(SimpleGreeting.class.getClassLoader());
     }
 }

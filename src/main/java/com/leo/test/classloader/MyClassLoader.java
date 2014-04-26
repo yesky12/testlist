@@ -6,10 +6,11 @@ import java.io.FileInputStream;
 import java.io.InputStream;
 
 public class MyClassLoader extends ClassLoader {
+
     /** 类加载器名称 */
-    private String name;
+    private String       name;
     /** 加载路径 */
-    private String path;
+    private String       path;
 
     private final String classType = ".class";
 
@@ -46,8 +47,8 @@ public class MyClassLoader extends ClassLoader {
             e.printStackTrace();
         } finally {
             try {
-                is.close();
-                baos.close();
+                if (is != null) is.close();
+                if (baos != null) baos.close();
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -69,52 +70,53 @@ public class MyClassLoader extends ClassLoader {
     }
 
     public static void main(String[] args) {
+        // MyClassLoader loader1 = new MyClassLoader("loader1");
+        // loader1.setPath(System.getProperty("java.class.path"));
+        // try {
+        // Class clazz = loader1.loadClass("com.mycompany.app.Cat");
+        // clazz.newInstance();
+        // } catch (Exception e) {
+        // e.printStackTrace();
+        // }
+
+        // MyClassLoader loader1 = new MyClassLoader("loader1");
+        // loader1.setPath("d:\\");
+        // try {
+        // Class<?> clazz = loader1.loadClass("Animal");
+        // loader1 = null;
+        // loader1 = new MyClassLoader("loader1");
+        // loader1.setPath("d:\\");
+        // Class<?> clazz2 = loader1.loadClass("Animal");
+        // System.out.println(clazz == clazz2);
+        // System.out.println(clazz.hashCode());
+        // System.out.println(clazz2.hashCode());
+        // } catch (ClassNotFoundException e) {
+        // e.printStackTrace();
+        // }
+
+        // java.lang.Object
+
         MyClassLoader loader1 = new MyClassLoader("loader1");
-        loader1.setPath(System.getProperty("java.class.path"));
+        loader1.setPath("/home/leo/");
         try {
-            Class clazz = loader1.loadClass("com.mycompany.app.Cat");
-            clazz.newInstance();
+            System.out.println(loader1.getParent());
+            Class<?> clazz = loader1.loadClass("AccountAsm");
+            System.out.println(clazz.getClassLoader());
+            System.out.println(Animal.class.getClassLoader());
+            Animal animal = (Animal) clazz.newInstance();
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-//		MyClassLoader loader1 = new MyClassLoader("loader1");
-//		loader1.setPath("d:\\");
-//		try {
-//			Class<?> clazz = loader1.loadClass("Animal");
-//			loader1 = null;
-//			loader1 =  new MyClassLoader("loader1");
-//			loader1.setPath("d:\\");
-//			Class<?> clazz2 = loader1.loadClass("Animal");
-//			System.out.println(clazz ==  clazz2);
-//			System.out.println(clazz.hashCode());
-//			System.out.println(clazz2.hashCode());
-//		} catch (ClassNotFoundException e) {
-//			e.printStackTrace();
-//		}
-
-        //java.lang.Object
-
-//		MyClassLoader loader1 = new MyClassLoader("loader1");
-//		loader1.setPath("d:\\");
-//		try {
-//			Class<?> clazz = loader1.loadClass("Animal");
-//			System.out.println(clazz.getClassLoader());
-//			System.out.println(Animal.class.getClassLoader());
-//			Animal animal = (Animal) clazz.newInstance();
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
-
-//		MyClassLoader loader1 = new MyClassLoader("loader1");
-//		loader1.setPath("d:\\");
-//		try {
-//			Class<?> clazz = loader1.loadClass("Animal");
-//			Object object = clazz.newInstance();
-//			Field field = clazz.getField("a");
-//			System.out.println(field.getInt(object));
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//		}
+        // MyClassLoader loader1 = new MyClassLoader("loader1");
+        // loader1.setPath("d:\\");
+        // try {
+        // Class<?> clazz = loader1.loadClass("Animal");
+        // Object object = clazz.newInstance();
+        // Field field = clazz.getField("a");
+        // System.out.println(field.getInt(object));
+        // } catch (Exception e) {
+        // e.printStackTrace();
+        // }
     }
 }

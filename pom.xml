@@ -19,6 +19,7 @@
             <groupId>log4j</groupId>
             <artifactId>log4j</artifactId>
             <version>1.2.16</version>
+            <!--<scope>provided</scope>-->
         </dependency>
 
         <dependency>
@@ -112,9 +113,36 @@
         </dependency>
 
         <dependency>
-            <groupId>com.alibaba.platform.shared</groupId>
-            <artifactId>napoli.client</artifactId>
-            <version>1.5.3</version>
+            <groupId>com.taobao.hsf</groupId>
+            <artifactId>hsf.container</artifactId>
+            <version>1.8.1.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.taobao.hsf</groupId>
+            <artifactId>hsf.thirdcontainer.tomcat</artifactId>
+            <version>1.8.1.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.eclipse.osgi</groupId>
+            <artifactId>framework</artifactId>
+            <version>3.4.2.R34x_v20080826</version>
+            <type>jar</type>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.taobao.hsf</groupId>
+            <artifactId>hsf.thirdcontainer.jboss</artifactId>
+            <version>1.8.1.6</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.taobao.hsf</groupId>
+            <artifactId>hsf.app.spring</artifactId>
+            <version>2.0.1.9</version>
+            <type>jar</type>
         </dependency>
 
     </dependencies>
