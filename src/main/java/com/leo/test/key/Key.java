@@ -121,6 +121,6 @@ public class Key {
 
     public static void main(String[] args) {
         Random r = new Random();
-        System.out.println("user name:" + "happy" + " KEY:" + MakeKey("happy", 0, r.nextInt(Integer.MAX_VALUE)));
+        System.out.println("user name:" + "leo" + " KEY:" + MakeKey("leo", 0, r.nextInt(Integer.MAX_VALUE)));
     }
 }
