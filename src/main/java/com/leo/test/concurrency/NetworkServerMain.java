@@ -27,11 +27,14 @@ public class NetworkServerMain {
         try {
             Thread.sleep(500);
         } catch (InterruptedException ex) {
+            ex.printStackTrace();
         }
         System.out.println("Press enter to quit...");
         try {
-            System.in.read();
+            int a = System.in.read();
+            System.out.println(a);
         } catch (IOException ex) {
+            ex.printStackTrace();
         }
         System.out.println("Quiting...");
         exSrv.shutdownNow();
