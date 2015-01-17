@@ -34,7 +34,7 @@ public class MyClassLoader extends ClassLoader {
         InputStream is = null;
         byte[] data = null;
         ByteArrayOutputStream baos = null;
-        this.name = this.name.replace(".", "\\");
+        name = name.replace(".", File.separator);
         try {
             is = new FileInputStream(new File(path + name + classType));
             baos = new ByteArrayOutputStream();
@@ -96,11 +96,11 @@ public class MyClassLoader extends ClassLoader {
 
         // java.lang.Object
 
-        MyClassLoader loader1 = new MyClassLoader("loader1");
-        loader1.setPath("/home/leo/");
+        MyClassLoader loader1 = new MyClassLoader(null, "loader1");
+        loader1.setPath("/Users/leo/test/");
         try {
             System.out.println(loader1.getParent());
-            Class<?> clazz = loader1.loadClass("AccountAsm");
+            Class<?> clazz = loader1.loadClass("com.leo.test.classloader.Animal");
             System.out.println(clazz.getClassLoader());
             System.out.println(Animal.class.getClassLoader());
             Animal animal = (Animal) clazz.newInstance();

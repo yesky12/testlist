@@ -1,7 +1,0 @@
-$page.setTitle("新标题！")
-#if ($userAuth.loggedIn)
-  <p>你好，$userAuth.loginUser.name</p>
-#else
-  <p>你好，世界！</p>
-#end
-<p>现在时间:$date</p>

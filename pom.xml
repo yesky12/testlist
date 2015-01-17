@@ -81,76 +81,76 @@
             <version>3.2.1</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.alibaba.shared</groupId>
-            <artifactId>toolkit.webx.turbine</artifactId>
-            <version>2.0</version>
-            <exclusions>
-                <exclusion>
-                    <artifactId>resources</artifactId>
-                    <groupId>resources</groupId>
-                </exclusion>
-            </exclusions>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.alibaba.shared</groupId>-->
+            <!--<artifactId>toolkit.webx.turbine</artifactId>-->
+            <!--<version>2.0</version>-->
+            <!--<exclusions>-->
+                <!--<exclusion>-->
+                    <!--<artifactId>resources</artifactId>-->
+                    <!--<groupId>resources</groupId>-->
+                <!--</exclusion>-->
+            <!--</exclusions>-->
+        <!--</dependency>-->
 
-        <dependency>
-            <groupId>com.caucho.hessian</groupId>
-            <artifactId>hessian</artifactId>
-            <version>4.0.7</version>
-            <type>rar</type>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.caucho.hessian</groupId>-->
+            <!--<artifactId>hessian</artifactId>-->
+            <!--<version>4.0.7</version>-->
+            <!--<type>rar</type>-->
+        <!--</dependency>-->
 
-        <dependency>
-            <groupId>com.taobao.tair</groupId>
-            <artifactId>tair-mc-client</artifactId>
-            <version>1.0.4.14</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.taobao.tair</groupId>-->
+            <!--<artifactId>tair-mc-client</artifactId>-->
+            <!--<version>1.0.4.14</version>-->
+        <!--</dependency>-->
 
-        <dependency>
-            <groupId>com.alibaba.intl.sourcing.shared</groupId>
-            <artifactId>biz.rfq.common</artifactId>
-            <version>1.0.13</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.alibaba.intl.sourcing.shared</groupId>-->
+            <!--<artifactId>biz.rfq.common</artifactId>-->
+            <!--<version>1.0.13</version>-->
+        <!--</dependency>-->
 
-        <dependency>
-            <groupId>com.taobao.hsf</groupId>
-            <artifactId>hsf.container</artifactId>
-            <version>1.8.1.6</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.taobao.hsf</groupId>-->
+            <!--<artifactId>hsf.container</artifactId>-->
+            <!--<version>1.8.1.6</version>-->
+        <!--</dependency>-->
 
-        <dependency>
-            <groupId>com.taobao.hsf</groupId>
-            <artifactId>hsf.thirdcontainer.tomcat</artifactId>
-            <version>1.8.1.6</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.taobao.hsf</groupId>-->
+            <!--<artifactId>hsf.thirdcontainer.tomcat</artifactId>-->
+            <!--<version>1.8.1.6</version>-->
+        <!--</dependency>-->
 
-        <dependency>
-            <groupId>org.eclipse.osgi</groupId>
-            <artifactId>framework</artifactId>
-            <version>3.4.2.R34x_v20080826</version>
-            <type>jar</type>
-            <scope>provided</scope>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.eclipse.osgi</groupId>-->
+            <!--<artifactId>framework</artifactId>-->
+            <!--<version>3.4.2.R34x_v20080826</version>-->
+            <!--<type>jar</type>-->
+            <!--<scope>provided</scope>-->
+        <!--</dependency>-->
 
-        <dependency>
-            <groupId>com.taobao.hsf</groupId>
-            <artifactId>hsf.thirdcontainer.jboss</artifactId>
-            <version>1.8.1.6</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.taobao.hsf</groupId>-->
+            <!--<artifactId>hsf.thirdcontainer.jboss</artifactId>-->
+            <!--<version>1.8.1.6</version>-->
+        <!--</dependency>-->
 
-        <dependency>
-            <groupId>com.taobao.hsf</groupId>
-            <artifactId>hsf.app.spring</artifactId>
-            <version>2.0.1.9</version>
-            <type>jar</type>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.taobao.hsf</groupId>-->
+            <!--<artifactId>hsf.app.spring</artifactId>-->
+            <!--<version>2.0.1.9</version>-->
+            <!--<type>jar</type>-->
+        <!--</dependency>-->
 
-        <dependency>
-            <groupId>org.jboss.mx</groupId>
-            <artifactId>jboss-jmx</artifactId>
-            <version>6.0.0.GA</version>
-            <scope>provided</scope>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.jboss.mx</groupId>-->
+            <!--<artifactId>jboss-jmx</artifactId>-->
+            <!--<version>6.0.0.GA</version>-->
+            <!--<scope>provided</scope>-->
+        <!--</dependency>-->
 
     </dependencies>
 

@@ -1,8 +1,0 @@
-<ul>
-    <li><a href="$alibabaSite">阿里巴巴中文站</a></li>
-    <li>$data</li>
-    <li>菜单</li>
-    <li>菜单</li>
-    <li>菜单</li>
-    <li>$!viewTool.toLocaleString($!date, "yyyy-MM-dd")</li>
-</ul>
