@@ -38,8 +38,8 @@ public class MyClassLoader extends ClassLoader {
         try {
             is = new FileInputStream(new File(path + name + classType));
             baos = new ByteArrayOutputStream();
-            int ch = 0;
-            while (-1 != (is.read())) {
+            int ch;
+            while (-1 != (ch = is.read())) {
                 baos.write(ch);
             }
             data = baos.toByteArray();
@@ -70,14 +70,14 @@ public class MyClassLoader extends ClassLoader {
     }
 
     public static void main(String[] args) {
-        // MyClassLoader loader1 = new MyClassLoader("loader1");
-        // loader1.setPath(System.getProperty("java.class.path"));
-        // try {
-        // Class clazz = loader1.loadClass("com.mycompany.app.Cat");
-        // clazz.newInstance();
-        // } catch (Exception e) {
-        // e.printStackTrace();
-        // }
+        MyClassLoader loader1 = new MyClassLoader("loader1");
+        loader1.setPath("/Users/leo/test/");
+        try {
+            Class clazz = loader1.loadClass("Cat");
+            clazz.newInstance();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         // MyClassLoader loader1 = new MyClassLoader("loader1");
         // loader1.setPath("d:\\");
@@ -96,17 +96,18 @@ public class MyClassLoader extends ClassLoader {
 
         // java.lang.Object
 
-        MyClassLoader loader1 = new MyClassLoader(null, "loader1");
-        loader1.setPath("/Users/leo/test/");
-        try {
-            System.out.println(loader1.getParent());
-            Class<?> clazz = loader1.loadClass("com.leo.test.classloader.Animal");
-            System.out.println(clazz.getClassLoader());
-            System.out.println(Animal.class.getClassLoader());
-            Animal animal = (Animal) clazz.newInstance();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        // MyClassLoader loader1 = new MyClassLoader(null, "loader1");
+        // loader1.setPath("/Users/leo/test/");
+        // try {
+        // System.out.println(loader1.getParent());
+        // Class<?> clazz = loader1.loadClass("com.leo.test.classloader.Animal");
+        // System.out.println(clazz.getClassLoader());
+        // System.out.println(Animal.class.getClassLoader());
+        // Object object = clazz.newInstance();
+        // Animal animal = (Animal) object;
+        // } catch (Exception e) {
+        // e.printStackTrace();
+        // }
 
         // MyClassLoader loader1 = new MyClassLoader("loader1");
         // loader1.setPath("d:\\");

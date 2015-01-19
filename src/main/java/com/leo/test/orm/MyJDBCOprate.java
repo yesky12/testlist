@@ -23,7 +23,7 @@ import org.apache.commons.lang.StringUtils;
  * @author Leo
  * 
  */
-public class QunarJDBCOprate {
+public class MyJDBCOprate {
 
 	/**
 	 * 查找数据，统一返回List
