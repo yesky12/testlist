@@ -1,9 +1,10 @@
 package com.leo.test.hessian;
 
-import com.caucho.hessian.client.HessianProxyFactory;
 
 import java.net.MalformedURLException;
 import java.util.Map;
+
+import com.taobao.hsf.com.caucho.hessian.client.HessianProxyFactory;
 
 /**
  * Created by leo on 14-4-17.
